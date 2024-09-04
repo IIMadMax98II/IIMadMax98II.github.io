@@ -1,105 +1,129 @@
 <!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Battleship</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Battleship</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">Mariano Cayzac</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Back To Home</a>
+        </header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="Triaed.html">Triaed</a></li>
-								<li><a href="BattleShip.html">Battleship</a></li>
-								<li><a href="Isolation.html">Isolation</a></li>
-								<li><a href="StormSailors.html">Storm Sailors</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">About Me</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/mariano-cayzac-530686200/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+            </ul>
+        </nav>
 
-				<!-- Wrapper -->
-					<section id="wrapper">
-						<header>
-							<div class="inner">
-								<h2>Battleship</h2>
-							</div>
-						</header>
+        <!-- Main -->
+        <div id="main">
 
-						<!-- Content -->
-							<div class="wrapper">
-								<div class="inner">
-									<section class="features">
-										<h3 class="major">About the game</h3>
-										<p><span class="image left"><img src="images/C++.png" alt="" /></span> Battleship is the C++ implementation of the tabletop game with the same title, which i programmed during my last semester on the BTS. The rules of the game are identical to those of the tabletop version. I created up to 4 different difficulties. The easy difficulty only selects random guesses, the intermediate will remember when it hit a target and will try to adjust it's guesses accordingly, while the two last difficulties will also try to guess where the smallest posible boat would not fit and will immediately discard those options from the get-go. The final difficulty does not display the player board, forcing the players to remember their guesses. I also took the liberty to make mines able to trigger other mines, making the game a bit more chaotic.</p>
-									</section>
-									<section class="features">
-										<h3 class="major ">The planning</h3>
-										<p>Before i started coding i needed to define the code's structure. Therefore i implemented two UML diagrams to fully describe how the code should work, this allowed me to have a clean idea and avoid having to rewrite code when stumbling into a problem.</p>
-											<ul class="links" style="list-style:none;">
-												<li><a style="color:#A45EE5" href="documentation/ActivityDiagram.jpg" download> Activity Diagram</a></li>
-												<li><a style="color:#A45EE5" href="documentation/BattleshipClassDiagram.jpg" download> Class Diagram</a></li>
-											</ul>
-									</section>
-									<section class="features">
-										<h3 class="major ">Challenges</h3>
-										<p> The hardest part of this project was creating the two last difficulties, for this i needed to implement some design patterns such as the Visitor to allow them to take a peek at the player's smallest ship as well as its current status (how damaged), and choosing how to reorganize its choices.</p>
-									</section>
-									<a  class="button primary fit" href="games/Battleship.exe" download> Download The Game </a>
-									<a style="margin-top: 50px; margin-left:40%;" class="primary small" href="games/Battleship.zip" download> Download the whole project </a>
-									  
-									</section>
+            <!-- Post -->
+            <section class="post">
+                <header class="major">
+                    <h1>Battleship</h1>
+                    <p style="text-align:justify">
+                        Battleship is the C++ implementation of the tabletop game with the same title, which i programmed during my last semester on the BTS.
+                        <br><br>
+                        The rules of the game are identical to those of the tabletop version. I created up to 4 different difficulties.
+                        The easy difficulty only selects random guesses, the intermediate will remember when it hit a target and will try to adjust it's guesses accordingly,
+                        while the two last difficulties will also try to guess where the smallest posible boat would not fit and will immediately discard those options from the get-go.
+                        <br><br>
+                        The final difficulty does not display the player board, forcing the players to remember their guesses.
+                        I also took the liberty to make explosive mines which are able to trigger other mines, making the game a bit more chaotic.
+                    </p>
+                </header>
+            </section>
+            <section class="posts">
+                <article>
+                    <a class="image fit"><img src="images/Battleship/ScriptBattleship.png" alt="" /></a>
+                    <p style="text-align:justify">
+                        Before i started coding i needed to define the code's structure.
+                        Therefore i implemented two UML diagrams to fully describe how the code should work,
+                        this allowed me to have a clear idea and avoid having to rewrite code when stumbling into a problem.
+                    </p>
+                    <ul class="actions special">
+                        <li><a class="button" href="images/Battleship/BattleshipActivityDiagram.jpg" download>Activity Diagram</a></li>
+                        <li><a class="button" href="images/Battleship/BattleshipClassDiagram.jpg" download>Class Diagram</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <header>
+                        <h2>Challenges</h2>
+                    </header>
+                    <p style="text-align:justify">
+                        The hardest part of this project was creating the two last difficulties,
+                        for this i needed to implement some design patterns such as the
+                        Visitor to allow them to take a peek at the player's smallest ship as well as its current status (how damaged),
+                        and choosing how to reorganize its choices.
+                    </p>
+                    <h2>What I learned</h2>
+                    <p style="text-align:justify">
+                        I think there is two valuable lessons that i learned during this project.
+                        One being the importance of starting production as soon as posible and to be well prepared and structured before getting start coding.
+                        <br><br>
+                        In addition, the use of design patterns in practical matter, instead of the standard in-class excersises/theory really open my mind and
+                        has simplyfied the way I program for my current projects.
+                    </p>
+                </article>
+            </section>
+            <section class="post">
+                <header class="minor" style="text-align:center;">
+                    <h2>Try the game yourself</h2>
+                    <a class="button" href="gameFiles/BattleshipSetup.msi" download>Exe File</a>
+                    <br><br>
+                    <h3>Or download the whole project</h3>
+                    <a class="button" href="gameFiles/Battleship.zip" download>Zip File</a>
+                </header>
+            </section>  
+        </div>
+        <!-- Footer -->
+        <footer id="footer">
+            <section class="split contact">
+                <section class="alt">
+                    <h3>Address</h3>
+                    <p>Dundalk, Ireland</p>
+                </section>
+                <section>
+                    <h3>Email</h3>
+                    <p><a href="mailto:marianocayzac@hotmail.com">marianocayzac@hotmail.com</a></p>
+                </section>
+                <section>
+                    <h3>Social</h3>
+                    <ul class="icons alt">
+                        <li><a href="https://www.linkedin.com/in/mariano-cayzac-530686200/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
 
-				<!-- Footer -->
-				<section id="footer">
-					<div class="inner">
-						<h2 class="major">Get in touch</h2>
-						<ul class="contact">
-							<li class="icon solid fa-home">
-								Student Village<br />
-								Dublin Road,<br />
-								Dundalk
-							</li>
-							<li class="icon solid fa-envelope"><a href="mailto:marianocayzac@hotmail.com">marianocayzac@hotmail.com</a></li>
-							<li class="icon brands fa-linkedin"><a href="https://www.linkedin.cn/in/mariano-cayzac-530686200/">LinkedIn</a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy;Mariano Cayzac</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-				</section>
+        <!-- Copyright -->
+        <div id="copyright">
+            <ul><li>&copy; Mariano Cayzac</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+        </div>
 
-			</div>
+    </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-	</body>
+</body>
 </html>
