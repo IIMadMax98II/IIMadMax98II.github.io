@@ -34,7 +34,7 @@
 			h2 {
 				border-bottom: solid 2px _palette(border);
 				font-size: 2em;
-				margin-bottom: 0;
+				margin-bottom: _size(element-margin) * 0.4;
 				padding-bottom: _size(element-margin) * 0.2;
 			}
 
@@ -107,7 +107,7 @@
 
 	.wrapper {
 		background-color: _palette(bg);
-		margin: _size(wrapper-edges, large) 0;
+		margin: 0;
 		position: relative;
 		@include wrapper-edges-color(_palette(bg));
 
