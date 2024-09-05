@@ -1,0 +1,446 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Monochrome</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">Back To Home</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="index.html">About Me</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/mariano-cayzac-530686200/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<h1>Monochrome</h1>
+					<p style="text-align:justify;">
+						Our protagonist has taken a job that will require them to take care of an old Movie Theatre
+						for a couple of months in a distant town far from home.
+						<br><br>
+						During their staying, a blizzard strikes the town trapping our protagonist inside.
+						The game utilizes horror elements in order to facilitate player’s immersion,
+						aiming to create a connection with the character’s mental stability
+						which will deteriorate to the lost social interaction and complete isolation.
+					</p>
+				</header>
+				<iframe class="image fit" width="100%" height="720px" src="https://youtube.com/embed/PzdKI7Uu2Kg" title="YouTube video player"
+						frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+			<!-- Main Role Section -->
+			<section class="post">
+				<header style="text-align:center;">
+					<h2>My Role</h2>
+					<p style="text-align:justify;">
+						During this project we had to deal with being the smallest team, consisting in only 4 team members.
+						Two of them would focus on audio, art and level design; While the other two (me included), focus on coding and design.
+						Throught development i was Lead Game and Narrative Designer.
+						However, later on I would be covering other areas to compensate for deadlines and other obstacles.
+						<br><br>
+						At first I was to create a game which is fun and engaging that is also able to portray a serious narrative that
+						illustrates real life mental health concerns. With the use of proper research and testing I
+						aimed to avoid falling into one of the biggest fears of a designer while making a horror game;
+						Ending up with a walking simulator. With this in mind, my responsabilities where:
+						<br><br>
+						Conceptualize, implement, and maintain gameplay systems that achieve a fulfilling flow state,
+						engaging game loops, and a risk/reward balance. Developing the storyline, character back-stories, and dialogue, through scripts and
+						storyboards, including any relevant research.
+						<br><br>
+						Create and maintain comprehensive documentation (such as design outlines,
+						diagrams, and visual mockups) that details the triggers, interactions,
+						and subsequent events of specific features or aspects of gameplay.
+						Pitching new game ideas to team members, teachers and collaborators.
+						Following industry trends and good practices.
+						Doing quality control and prototyping.
+					</p>
+					<h3>Fair Warning</h3>
+					<p>
+						During this project we lost our lead programmer, as well as other obstacles outside our team that forced
+						me to cover a lot of roles within a very restrictive deadline, leading to extreme overtime. This experience tought me a lot
+						about different roles within a company and the importance of communication between teamates, and making sure that our goals aligned.
+						Proper communication would have lead to a much smaller scope and a more duable project.
+						<br><br>
+						I would be diving this page with the respective roles and work I accomplished during the production period.
+						Feel free to skip to a specific role below.
+					</p>
+					<ul class="actions special">
+						<li><a id="link" href="#GameDesign" class="button">Game Design</a></li>
+						<li><a id="link" href="#Programming" class="button">Programming</a></li>
+						<li><a id="link" href="#Modelling" class="button">Modelling/Animation</a></li>
+					</ul>
+				</header>
+			</section>
+			<!--Game Design Section-->
+			<section class="post">
+				<header style="text-align:center;">
+					<h2 id="GameDesign">Game Designer</h2>
+					<p style="text-align:justify;">
+						This section aims to document every system interaction between the player and the game.
+						Within this section, we will detail core mechanics that have specific attachment to the
+						theme and some basic mechanics that overall add to the experience and players engagement
+						to the game itself.
+						<br><br>
+						There where three core mechanics, which include the use of non-human companion,
+						phone signal simulation and a task machine.
+						These mechanics will be explained in more detail down below.
+						<br><br>
+						Alternatively you can just go directly to the GDD
+						<br>
+						<a class="button" href="documents/Monochrome_GDD.pdf" download> Download GDD</a>
+					</p>
+
+				</header>
+			</section>
+			<!-- Main -->
+			<section class="posts">
+				<article>
+					<header>
+						<h2>Non-human Companion</h2>
+					</header>
+					<a class="image fit"><img src="images/Monochrome/MannequinGameLoop.png" alt="" /></a>
+					<p style="text-align:justify">
+						I believed it was a good idea for the player to have a mannequin as their non-human companion. Similar
+						to what portal does with the heart cube or Firewatch with Forrest Byrnes.
+						The reasoning behind incorporating this into the game is because the game itself has no NPCs.
+						Giving players something they can be attached to, a behavior you would expect for a person in isolation.
+						After all, human beings are social creatures by nature.
+						<br><br>
+						To increase players interaction and connection with the inanimate object,
+						players will be able to find clothing items and props around the map, thus boosting exploration.
+						These collectibles can be used to customize their companion. Further into the game the companion
+						will be added to the horror aspect of the game. Disappearing one of the days and reappearing in
+						different rooms or in front of cameras to give the sense that its alive, making emphasis on the
+						characters dissociation with reality.
+					</p>
+				</article>
+				<article>
+					<header>
+						<h2>Signal Simulation</h2>
+					</header>
+					<a class="image fit"><img src="images/Monochrome/SignalSimulationGraph.png" alt="" /></a>
+					<p style="text-align:justify">
+						I think this mechanic is a more organic way to indirectly force players to explore the level.
+						Basically, at certain intervals the character will receive text messages from their partner,
+						and they will need to answer to boost the sanity levels. The reasoning behind this is related
+						to the impact social media has nowadays in everyday life. Being unable to reach loved ones nowadays
+						is a lot more anxiety inducing. This mechanic plays around with the feeling of being left behind
+						and makes emphasis on the distance between the character and their home.
+						<br><br>
+						The way the mechanic works is that there will be areas on the map where the player has
+						enough signal to send a message. The player will have to find these areas by paying attention
+						to the signal bar on their phone. The closer the player is to the rooms with signal the more
+						bars will appear. Having three bars will allow the player to send the message and thus boost
+						their sanity levels.
+						<br><br>
+						The areas where the signal is will be chosen at random from a selection hand made by the developers.
+						These areas will have anomaly triggers that will link to the players narrative.
+					</p>
+				</article>
+				<article>
+					<header>
+						<h2>Task Machine</h2>
+					</header>
+					<a class="image fit"><img src="images/Monochrome/TaskMachineGameLoop.png" alt="" /></a>
+					<p style="text-align:justify">
+						Finally, a task machine that will print out daily instructions to the player.
+						Once the player is done with the main task, they will need to go back to the task machine to submit
+						their progress and end the day. This machine will provide input to the player via audio queues
+						which are basic robotic noises, replacing normal dialog between them and a supervisor.
+						<br><br>
+						We believe that having the machine instead of an actual person giving the tasks will create
+						more distance between the player and human interactions.
+						<br><br>
+						As you can see by the engagement loop. Players will end the day once they have finished all main
+						tasks throughout the day. If the player were to interact with the machine without completing the
+						tasks, the machine will emit a failing sound and nothing else will happen.
+						<br><br>
+						At first task will be mundaine and normal (randomly generated from an array), but later on will
+						become very odd and prone to enduce insanity to the character.
+				</article>
+				<article>
+					<header>
+						<h2>User Testing</h2>
+					</header>
+					<p style="text-align:justify">
+						The original plan was to have user testing throughout the entirety of the production
+						section and final release. However due to constant delays and bugs showing up, it had to be left
+						out to the last sprint.
+						<br><br>
+						Within that sprint we tested the game in person with groups from other programs/courses.
+						They gave us lots of feedback which helped improve the game and how it presents itself to the user.
+						Unfortunately not all feedback could be address and there is still a lot to improve in terms of user
+						experience.
+					</p>
+					<h3>Audio Design</h3>
+					<p style="text-align:justify">
+						To increase the use of narrative elements, explore main character's personality and response
+						to the events; As well as acting as player's guidance or feedback to action they may want to
+						try or don't know they perform, more than 20 voice lines where written down and iterated through.
+						However only 16 of them were actually introduced into the game due to time restrains.
+						<br><br>
+						Dialogue lines that I recorded myself where mostly related to picking the wrong item, or interacting
+						with an object without having the correct tools, etc. Good example of these dialogues are:
+						<br><br>
+						"Why would someone leave this here?" (Finding a tool)
+						<br>
+						"Hello? Someone there?" (Low sanity)
+						<br>
+						"Of course... No signal" (Sending text without signal)
+					</p>
+				</article>
+			</section>
+			<section class="post">
+				<header style="text-align:center;">
+					<h2 id="Programming">Programmer</h2>
+				</header>
+				<p style="text-align:justify;">
+					I think that for the programming role is worth adding a bit of context, since originally
+					I would have taken a much minor role but given some problems on development, plus lots of
+					delegations it ended being as big as my lead designer role in terms of work put on it and my
+					responsibilities on the project. My role covered from simple bug fixing and managing branch
+					merges to fully develop and test systems.
+					<br><br>
+					This section will be divided into Inverse Kinematics, Post processing,
+					Animation States and the Anomaly System. However, it is worth noting that i was also responsible for the
+					phone texting and signal system and the sanity system as well. But to keep it as short as posible i will
+					be covering the top 4 most interesting ones.
+				</p>
+			</section>
+			<section class="posts">
+				<article>
+					<header>
+						<h2>Inverse Kinematics</h2>
+					</header>
+					<a class="image fit"><img src="images/Monochrome/StairsUp.gif" alt="" /></a>
+					<p style="text-align:justify">
+						What you see above is an early development video of the inverse kinematics working within Unity Engine
+						to make the player walk up stairs.
+						<br><br>
+						After watching a few videos in the subject and Unity's Documentation, I was able to generate somewhat of a working and believable walk
+						that will bend the player's knee and position the foot's angle and position based on the
+						distance they had to the floor.  Thus, instead of hovering over objects they will realistically
+						stand on them. I can recommend the following video which i used as a guide:
+						<a href="https://www.youtube.com/watch?v=rGB1ipH6DrM&t=1s"> Inverse Kinematics Video.</a>
+						<br><br>
+						However, lack of experience utilizing Inverse kinematics pushed me to find a different
+						soulution to allow thecharacter to distinguish objects on different heights using raycasting.
+					</p>
+					<a class="image fit"><img src="images/Monochrome/Raycasting.png" alt="" /></a>
+					<a class="image fit"><img src="images/Monochrome/PickUp.gif" alt="" /></a>
+				</article>
+				<article>
+					<header>
+						<h2>Post processing</h2>
+					</header>
+					<a class="image fit"><img src="images/Monochrome/PostProcessingBefore.png" alt="" /></a>
+					<p style="text-align:justify">
+						The way we utilize post-processing through development had a drastic change half way into the project.
+						Originally it consisted in have two cameras stacked on top of each other.
+						<br><br>
+						One would render UI elements and objects we would like to highlight and keep unchanged by the grayscale
+						or other effect,while the rest would be influenced by them. When HDRP was introduced,
+						I was quickly introduced to a new problem.
+						<br><br>
+						This meant that camera stacking was no longer possible and the tools used to create volumes was
+						different and more complex (mostly had more options and settings).
+						<br><br>
+						Post-Processing was changed once more when, suggested by the lecturers, that the effects would
+						start to show up as the sanity decreases. Thus, making  the sanity system  clearer to the player
+						and not loosing the detail on the assets made by other team members in the process.
+						<a class="image fit"><img src="images/Monochrome/phoneMessage.gif" alt="" /></a>
+					</p>
+
+				</article>
+				<article>
+					<header>
+						<h2>Anomaly System</h2>
+					</header>
+					<a class="image fit"><img src="images/Monochrome/Anomaly.gif" alt="" /></a>
+					<p style="text-align:justify">
+						Rapidly having an event system via delegate to manage Sanity levels, while those who require values form
+						it to act as listeners, thus avoiding overflowing the Update method and improve frames,
+						allowed me to spend more time on the Anomaly system.
+						<br><br>
+						I first created a handler, which would have a reference to each anomaly on the scene and would trigger one at
+						random within a designated amount of time which could vary depending on the current in-game day or difficulty.
+						<br><br>
+						I also created certain checks to prevent the same anomaly triggering multiple times and an enumerator to
+						distinguish between different anomaly types.
+					</p>
+					<h4>Use of Polymorphism</h4>
+					<p>
+						The Anomaly class is an abstract class that inherits from the Interactable class.
+						This allows me to the create multiple different version that override the main class's functions.
+						The main reason why I am using an abstract class is to be able to trigger anomalies directly by just
+						having the reference to the abstract class instead of having different lines of codes to do the same
+						thing over and over to different classes.
+						<br><br>
+						Within this class, I state a few different things that are
+						essential for all anomaly types. This being a Trigger, Fix, isActive (to check whether it has been
+						triggered before or not) and references to its original and current state to be able to fix them later
+						or keep them persistent through scene changes.
+					</p>
+				</article>
+				<article>
+					<header>
+						<h2>Animation States</h2>
+					</header>
+					<a class="image fit"><img src="images/Monochrome/Animations.gif" alt="" /></a>
+					<p style="text-align:justify">
+						I started by gathering animations from Mixamo, which facilitated the rigging process since it does
+						the rigging for you. Some manual adjustments were needed inside the editor but the whole importing
+						was pretty fast and quite efficient.
+						<br><br>
+						Setting up the animator to properly flow between one state to another proved to be a bit more
+						challenging that what I thought. At first I decided to implement a Blend Tree which would allow
+						me to quickly and naturally transition from one animation to another. The way I decided to
+						implemented was by mapping the player's input number (basically if he is moving forward or
+						backwards -1 to 1 or left to right -1 to 1). This number was generated by the engine depending
+						on the player's hold in the corresponding key.
+						<br><br>
+						For running and interacting I just had a check whether the player is holding the respective or not,
+						and for idle animations I had a timer that would trigger if the player wasn't tiggering any command.
+						In addition I also added different variations to give a bit more life to the character,
+						which would also varied depending on their current sanity.
+						After a lot of iterations and remakes, the flow chart ended up looking like the one below.
+					</p>
+					<a class="image fit"><img src="images/Monochrome/AnimationChart.png" alt="" /></a>
+				</article>
+			</section>
+			<section class="post">
+				<header style="text-align:center;">
+					<h2 id="Modelling">Modelling & Animation</h2>
+				</header>
+				<p style="text-align:justify;">
+					What started being just a minor aid to our Lead Artist, since i had to wait until some mechanics were incorporated
+					through code to continue with testing and Design Documentation, ended up being an extended amount of work through animation tweaking,
+					to modelling and adapting the system to the new movement controls created by our Lead Programmer. However, much of the work was scraped due to inexperience and time restrains. 
+					However I thought it would be worth addressing what i learned and my process.
+				</p>
+			</section>
+			<section class="posts">
+				<article>
+					<header>
+						<h2>Main Character</h2>
+					</header>
+					<p style="text-align:justify">
+						The idea behind the character was to keep the polygon look that old
+						games used to have but with a slightly increase of quality of visuals.
+						<br><br>
+						I started by placing anatomically references of our main character's shape.
+						Then continued by modifying a cube to look like the torso.
+						I managed to do this by moving the vertices to the correct positions and
+						then adding more lines as the modelled required more detail.
+						<a class="image fit"><img src="images/Monochrome/mainCharacter.gif" alt="" /></a>
+						Then I extrude parts of the torso to transform them into extremities.This new meshes would then be
+						mirrored using Blender's Mirror modifier which really sped up the process. Once this was finished,
+						i followed with making the mesh smoother.
+						<br><br>
+						However it would later be point out to me, by our Digital Sculpting teacher that i have overlooked some key
+						elements to make a good model. Looking at all the work needed to be done, plus the time restrains, I decided to
+						go for a much simpler option; Creating a character model using Fuse (a 3D modelling app for quick
+						export of working character models).
+					</p>
+					<a class="image fit"><img src="images/Monochrome/FullModel3D.png" alt="" /></a>
+				</article>
+				<article>
+					<header>
+						<h2>Rigging & Texturing</h2>
+					</header>
+					<a class="image fit"><img src="images/Monochrome/Rigging.png" alt="" /></a>
+					<p style="text-align:justify">
+						Thanks to Unity's intuitive UI and some documentation reading I was able to quickly map the
+						bones and muscles to the character, with the help of previously utilizing Mixamo's rigging capabilities.
+						<br><br>
+						However, importing the character and applying the textures always seemed to have scaling problems, as well as shadding.
+						To make things worse, the movement system implemented caused animations to be snappy, or overall broken. 
+						I spent a lot of hours try to fix such problems, but every new change in the code base brought up a lot more problems.
+						Leading to other parts of the system being broken down such as the idle animations and the smooth transitioning 
+						between them. From unexpected leg wiggles to complete deformations on the rigs, the system never truly work 
+						as expected. To add to the mentioned problems, there was no enough video tutorials or documentations 
+						that would help me fine a solution within the time I had to work on it. 
+						<br><br>
+						Other tasks, were starting to pile up and I needed to find a solution; fast. 
+						Thus i simplified the system and lowered the amount of animations to a minimum.
+					</p>
+				</article>
+			</section>
+				<div class="box alt">
+					<h2 style="text-align:center">More In-game Images</h2>
+					<div class="row gtr-uniform">
+						<div class="col-12"><span class="image fit"><img src="images/Monochrome/Screen.gif" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Monochrome/Hall.png" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Monochrome/PrototypeCinema.png" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Monochrome/Cinema.png" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Monochrome/PrototypeRoom.png" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Monochrome/BetterRoom.png" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Monochrome/mainMenu.png" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Monochrome/PickUpAbove.gif" alt="" /></span></div>
+						<div class="col-2"><span class="image fit"><img src="images/Monochrome/LookAroundAnim.gif" alt="" /></span></div>
+						<div class="col-3"><span class="image fit"><img src="images/Monochrome/Hall2.png" alt="" /></span></div>
+						<div class="col-3"><span class="image fit"><img src="images/Monochrome/Cinema02.png" alt="" /></span></div>
+
+					</div>
+				</div>
+		</div>
+
+		<!-- Footer -->
+		<!-- Footer -->
+		<footer id="footer">
+			<section class="split contact">
+				<section class="alt">
+					<h3>Address</h3>
+					<p>Dundalk, Ireland</p>
+				</section>
+				<section>
+					<h3>Email</h3>
+					<p><a href="mailto:marianocayzac@hotmail.com">marianocayzac@hotmail.com</a></p>
+				</section>
+				<section>
+					<h3>Social</h3>
+					<ul class="icons alt">
+						<li><a href="https://www.linkedin.com/in/mariano-cayzac-530686200/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul><li>&copy; Mariano Cayzac</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+		</div>
+
+	</div>
+
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>
