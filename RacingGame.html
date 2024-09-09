@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Racing Game</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Back To Home</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">About Me</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/mariano-cayzac-530686200/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Post -->
+            <section class="post">
+                <header class="major">
+                    <h1>Racing Game</h1>
+                    <p style="text-align:justify;">
+                        This project acted as a first year final exam for my Game Engine subject. I still was quite new at working with engines
+                        and my abilities were quite limited. I was given a couple of days to make a racing game that included a specific number
+                        of power-ups, like the ones in Mario Kart, which i will disclose below.
+                        <br><br>
+                        In addition, it required two different perspectives depending on the mode. For single player it would be a third person perspective,
+                        from the back of the car controlled by the player, while an AI competitor would go through very specific checkpoints to try reach the
+                        end of the race to beat the player.
+                        <br><br>
+                        Unfortunately, by the time I made the videos, updating the engine broke quite a few things, like the
+                        other vehicle on single player or the checkpoints in the LAN & Multiplayer.
+                    </p>
+                    <a class="image fit"><img src="images/RacingGame/RaceVid.gif"></a>
+                </header>
+            </section>
+            <!-- Main -->
+            <section class="posts">
+                <article>
+                    <header>
+                        <h2>Upgrades</h2>
+                    </header>
+                    <a class="image fit"><img src="images/RacingGame/RacingGamePic04.png" alt="" /></a>
+                    <p style="text-align:justify">
+                        Similar to how it works in Mario Kart, players can pick up power-ups in the form of cubes that will allow them to trigger them
+                        whenever they want.
+                    <br>
+                    <h4 style="text-align:justify">These powers are the following:</h4>
+                    <ul style="text-align:justify">
+                        <li>Making the vehicle smaller</li>
+                        <li>Making the vehicle bigger</li>
+                        <li>Slowing down</li>
+                        <li>Speeding up</li>
+                    </ul>
+                </article>
+                <article>
+                    <header>
+                        <h2>LAN & Multiplayer</h2>
+                    </header>
+                    <a class="image fit"><img src="images/RacingGame/RaceVid02.gif" alt="" /></a>
+                    <p style="text-align:justify">
+                        As part of the requirements for the exam, I set up the player selection to be keyboard for player one, 
+                        while each controller connected as the rest in order of connection. 
+                        <br><br>
+                        The camera would then register the position of each player and adjust the zoom and the location to keep everyone
+                        within view. If players where close to each other, the camera will zoom into the action but the greater the distance
+                        the more centered and far away the camera would be from the players.
+                    </p>
+                </article>
+                <article>
+                    <header>
+                        <h2>Challenges</h2>
+                    </header>
+                    <a class="image fit"><img src="images/RacingGame/RacingGamePic03.png" alt="" /></a>
+                    <p style="text-align:justify">
+                        My main challenge during this project was my programming experience and the information available to make a multiplayer game.
+                        The Unreal Documents where not updated and things did not work on the way explained in the text. Which resulted in a lot time
+                        used to research and multiple attempts/testing of the multiplayer.
+                        <br><br>
+                        I decided to fake the AI, by setting a specific array of positions which the vehicle will move towards, I yet did not have
+                        any experience with pathfinding and adapting the vehicle actor to be able to reach those without artificially moving it was
+                        far from my reach due to inexperience and time restrains.
+                        <br><br>
+                        Another obstacle faced, was that the physics of the vehicles themselves were quite extreme which led it to flip pretty easily. My solution
+                        was to put a trigger on the top of the car and use it to determine if it was flipped based on rotation and location. If the trigger
+                        happened, the player would be teleported to a checkpoint based on the last one crossed.
+                    </p>
+                </article>
+                <article>
+                    <header>
+                        <h2>Learning Outcomes</h2>
+                    </header>
+                    <a class="image fit"><img src="images/RacingGame/RacingGamePic02.png" alt="" /></a>
+                    <p style="text-align:justify">
+                        I think this project really improved my ability to research and think outside the box to solve problems using the tools at
+                        my disposal and overall adaptability to new obstacles and challenges that may spontaneously appear during production. 
+                        <br><br> 
+                        I believe that being able to deal with new arrising blockades within a reduced ammount of time, 
+                        can do wonders to efficiency and matching restrictive deadlines.
+                        <br><br>
+                        In addition, not being able to reach out to a professor or classmates for assistance with issues outside of my knowledge reinforced
+                        my individuality and assertiveness towards tackling problems in the future.
+                    </p>
+
+                </article>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section class="split contact">
+                <section class="alt">
+                    <h3>Address</h3>
+                    <p>Dundalk, Ireland</p>
+                </section>
+                <section>
+                    <h3>Email</h3>
+                    <p><a href="mailto:marianocayzac@hotmail.com">marianocayzac@hotmail.com</a></p>
+                </section>
+                <section>
+                    <h3>Social</h3>
+                    <ul class="icons alt">
+                        <li><a href="https://www.linkedin.com/in/mariano-cayzac-530686200/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            <ul><li>&copy; Mariano Cayzac</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+        </div>
+
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
