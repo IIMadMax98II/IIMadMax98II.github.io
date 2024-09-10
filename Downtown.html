@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Downtown</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">Back To Home</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="AboutMe.html">About Me</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/mariano-cayzac-530686200/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<h1>Downtown</h1>
+					<a class="image fit"><img src="images/Downtown/Monster.png" alt="" /></a>
+					<p style="text-align:justify;">
+					Another a small assignment I had during my studies in Dundalk's Institute of Technology. The main task was to make
+					a first person HDRP project with a focus on lighting, shaders and optimizations. 
+					<br><br>	
+					Project consisted on using a city modular asset to create our own small area where we could work on setting an atmosphere 
+					and utilize different shader's and lighting but keeping good performance. As per usual, i decided to keep a horror esthetic 
+					to the game, utilizing decals to add believable blood splatters.
+					</p>
+				</header>
+			</section>
+			<!-- Second Section -->
+			<section class="post">
+				<header style="text-align:center;">
+					<h2>Design Goals</h2>
+					<p style="text-align:justify;">
+						I opted to create a erie atmosphere by reducing light and adding some fog, in addition to a spectral green directional light
+						and a whole moon on the distance. There are some decals that work as blood spatters, utilizing dirt as texture to give it a 
+						more viceral look.
+						<br><br>
+						Having crashed cars and some abandoned giving a thrilling sensation, as well as, utilizing lights to direct 
+						player attention and highlight details. Moreover, utilizing post-processing to add some static effect, similar
+						to the ones implemented for lost footage videos.
+					</p>
+				</header>
+			</section>
+			<!-- Main -->
+			<section class="posts">
+				<article>
+					<header>
+						<h2>LightMapping</h2>
+					</header>
+					<a class="image fit"><img src="images/Downtown/Lightmap.png" alt="" /></a>
+					<p style="text-align:justify">
+						The biggest focus of the project was to be able to use and set up lightmaps to avoid any glitches or unnecessary loss of
+						performance. For this, I lowered parameters and overall quality of those meshes that were not going to be affected by
+						light or were plainly out of sight.
+						<br><br>
+						Meshes that are out of playing area are not only marked as static but also do not contribute to global lighting, as well
+						as adapting light maps size and compression depending on the type of mesh affected and their overall role in populating the
+						scene.
+					</p>
+				</article>
+				<article>
+					<header>
+						<h2>Use of LOD</h2>
+					</header>
+					<a class="image fit"><img src="images/Downtown/Blood.png" alt="" /></a>
+					<p style="text-align:justify">
+						Unfortunately the assets provided did not come with any variants with lower resolution. Nowadays I would probably have either
+						different models (with less polygon count) or even changing the texture quality based on how close the player is.
+						<br><br>
+						Use of LOD and occlussion facilitate the improvement of performance, both used in the project but with less precision than
+						I use nowadays for my games. Within the project, objects like the containers will not be render if a certain distance is
+						reached, this is made to avoid the sudden dissapearance or appearance of objects around the player which would break immersion
+						and overall disrupt the game flow.
+					</p>
+				</article>
+				<article>
+					<header>
+						<h2>Challenges</h2>
+					</header>
+					<a class="image fit"><img src="images/Downtown/Hotel.png" alt="" /></a>
+					<p style="text-align:justify">
+						Most challenges came from managing lighting, I understand that to fully get a grasp on how to properly set up a lightmap
+						and use lighting in a scene that doesn't only look well but doesn't destroy performance takes a lot of practice. Given
+						the time restrains and the alocated time to be able to work on the project, i was left with very limited room to properly
+						assess and stablish a more efficient and reliable scene.
+						<br><br>
+						Nonetheless, i feel quite proud towards what i managed to achieve and I'm looking forward to give it another go on future
+						projects.
+					</p>
+				</article>
+				<article>
+					<header>
+						<h2>Learning Outcomes</h2>
+					</header>
+					<a class="image fit" style="max-height:29.5%"><img src="images/Downtown/Car.png" alt="" /></a>
+					<p style="text-align:justify">
+						I think that this project further development my knowledge on lighting and it was definitely an upgrade from my
+						previous URP project, "Non Binary", in that area. Occlusion was something I also worked upon on previous projects, but in
+						this one there were extra factors that came to play that i haven't considered before, such as camera resolution.
+						<br><br>
+						Moreover, use of shaders has never been my forte, but being able to create a shader decal and it looking great boosted
+						my confidence towards working in other types of shaders, like the lava effect i used in Pestis.
+					</p>
+				</article>
+			</section>
+			<section class="post">
+				<header style="text-align:center;">
+					<h2>Technical Playthrough</h2>
+				</header>
+				<iframe class="image fit" width="100%" height="720px" src="https://youtube.com/embed/fiDw2c7Tkws" title="YouTube video player"
+						frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+		</div>
+
+		<!-- Footer -->
+		<!-- Footer -->
+		<footer id="footer">
+			<section class="split contact">
+				<section class="alt">
+					<h3>Address</h3>
+					<p>Dundalk, Ireland</p>
+				</section>
+				<section>
+					<h3>Email</h3>
+					<p><a href="mailto:marianocayzac@hotmail.com">marianocayzac@hotmail.com</a></p>
+				</section>
+				<section>
+					<h3>Social</h3>
+					<ul class="icons alt">
+						<li><a href="https://www.linkedin.com/in/mariano-cayzac-530686200/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul><li>&copy; Mariano Cayzac</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+		</div>
+
+	</div>
+
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>
