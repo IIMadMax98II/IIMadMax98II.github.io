@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>Non Binary</title>
+	<title>Downtown</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -33,33 +33,30 @@
 			<!-- Post -->
 			<section class="post">
 				<header class="major">
-					<h1>Non Binary</h1>
-					<a class="image fit"><img src="images/NonBinary/Dialogue.png" alt="" /></a>
+					<h1>Downtown</h1>
+					<a class="image fit"><img src="images/Downtown/Monster.png" alt="" /></a>
 					<p style="text-align:justify;">
-					This project was a small assignment I had during my studies in Dundalk's Institute of Technology. The main task was to make
-					a top-down URP project with some minimum requirements such as interactions, inventory system, dialogue, winning and 
-					loosing conditions, as well as, use of pathfinding to generate a point and click movement. Despite it being a quite small 
-					and simple project, i use most if not all the techniques learned today in my projects.
+					Another a small assignment I had during my studies in Dundalk's Institute of Technology. The main task was to make
+					a first person HDRP project with a focus on lighting, shaders and optimizations. 
+					<br><br>	
+					Project consisted on using a city modular asset to create our own small area where we could work on setting an atmosphere 
+					and utilize different shader's and lighting but keeping good performance. As per usual, i decided to keep a horror esthetic 
+					to the game, utilizing decals to add believable blood splatters.
 					</p>
 				</header>
 			</section>
 			<!-- Second Section -->
 			<section class="post">
 				<header style="text-align:center;">
-					<h2>Story & Design Goals</h2>
+					<h2>Design Goals</h2>
 					<p style="text-align:justify;">
-						The story is about a robot who suddenly gains consciousness after a collision with another robot, both realising that 
-						they are stuck in a corporate world where each machine serves a purpose, those who don't stick to that purpose 
-						get scrapped and converted into new units. 
+						I opted to create a erie atmosphere by reducing light and adding some fog, in addition to a spectral green directional light
+						and a whole moon on the distance. There are some decals that work as blood spatters, utilizing dirt as texture to give it a 
+						more viceral look.
 						<br><br>
-						With the sole purpose of finding freedom, both machines team up to find a way out of the facility. 
-						Starting at the top level of the facility, player needs to keep heading down until reaching
-						ground level and scape through one of the gates.
-						<a class="image fit"><img src="images/NonBinary/DialoguePopUps.png" alt="" /></a>
-						For the design of the game, i tried to keep complexity to a minimum but with each task required for the assignment in 
-						mind. Although i chosen to break immersion on the tutorial, for the purpose of quickly getting the player used to the
-						controls and interactions with the world, the rest of  the interactions with the world or guides to the player will 
-						be part of the world using dialogue, eye catching designs and use of tools such as light and sound to provide information.
+						Having crashed cars and some abandoned giving a thrilling sensation, as well as, utilizing lights to direct 
+						player attention and highlight details. Moreover, utilizing post-processing to add some static effect, similar
+						to the ones implemented for lost footage videos.
 					</p>
 				</header>
 			</section>
@@ -67,91 +64,70 @@
 			<section class="posts">
 				<article>
 					<header>
-						<h2>Enemy Pathfinding & Design</h2>
+						<h2>LightMapping</h2>
 					</header>
-					<a class="image fit"><img src="images/NonBinary/Enemy.png" alt="" /></a>
+					<a class="image fit"><img src="images/Downtown/Lightmap.png" alt="" /></a>
 					<p style="text-align:justify">
-					 Utilizing Unity's Nav mesh, I was able to quickly program and test both player movement and enemy movement. However i didn't
-					 want the enemies to immediately know and track down the player, instead I opted for giving it different states. 
-					 <br><br>
-					 One being standard patrol, through a predetermined path; Chase for when it sees the player and searching for when it looses sight. This
-					 last state remains active for a few seconds as it leads the enemy towards the player last known location and then looks around 
-					 that area before going back to patrolling, unless it finds the player which would prompt a new chase.
-					 <br><br>
-					 To accomodate to my design choices to provide player feedback that is compliant to the world, enemy's light (which represents vision cone)
-					 changes color depending on their current state. It being red to signify a chase state and provide a sense of danger. 
-					 <br><br>
-					 In addition, there is a sound component attached to the enemy AI that makes the presence known as the music plays louder when closer to the player. If player
-					 does not see the light, they can use their hearing to tell where enemies are before being detected or even seeing them.
+						The biggest focus of the project was to be able to use and set up lightmaps to avoid any glitches or unnecessary loss of
+						performance. For this, I lowered parameters and overall quality of those meshes that were not going to be affected by
+						light or were plainly out of sight.
+						<br><br>
+						Meshes that are out of playing area are not only marked as static but also do not contribute to global lighting, as well
+						as adapting light maps size and compression depending on the type of mesh affected and their overall role in populating the
+						scene.
 					</p>
 				</article>
 				<article>
 					<header>
-						<h2>Lighting</h2>
+						<h2>Use of LOD</h2>
 					</header>
-					<a class="image fit"><img src="images/NonBinary/InteractionPopUp.png" alt="" /></a>
+					<a class="image fit"><img src="images/Downtown/Blood.png" alt="" /></a>
 					<p style="text-align:justify">
-						Probably the most challenging part of the project, as the light on editor never did look like the one on build or play time.
-						Never truly found out whether it was a bug within the engine or if I was doing something wrong when making them. Unfortunately,
-						I did not have much time to give it the proper attention as I was on a tight schedule.
+						Unfortunately the assets provided did not come with any variants with lower resolution. Nowadays I would probably have either
+						different models (with less polygon count) or even changing the texture quality based on how close the player is.
 						<br><br>
-						I used different type of lights, since realtime lights are limited on URP and they take extra rendering power that will affect framerate.
-						For things such as room lighting I kept realtime to add immersion, however for static objects that dont really need to cast shadows I used
-						baked lights. 
-						<br><br>
-						It didn't take long for me to realise that having bake lights to items that may disappear, like the keycard, resulted in
-						light effects on walls and floors with the light source no longer being there. This forced me to change my strategy and make baked lights
-						out of the ones that do not disappear or change throughout the level. Loosing a bit of realism in exchange of better performance.
-						<br><br>
-						URP settings seemed to also conflict on how the lighting worked and affected the game, however my inexperience managing reuslted in it 
-						lowered quality of the game's looks.
-					</p>
-				</article>
-				<article>
-					<header>
-						<h2>Interactions</h2>
-					</header>
-					<a class="image fit"><img src="images/NonBinary/Interaction.png" alt="" /></a>
-					<p style="text-align:justify">
-						For the interactions, i decided to play around with zooming into objects and being able to move them around. This mechanic is something
-						I always been a fan of, utilized in games such as resident evil or escape simulator. I am always intrigued by the way thing are made, 
-						thus I always make it an extra challenge to try to reproduce it.
-						<br><br>
-						The actual coding behind it is rather simple but it adds to the player's interaction with the world. Sometimes is hard to immerse yourself
-						in a world that you can barely associate with, making you more of an observant than an important actor within the universe.
+						Use of LOD and occlussion facilitate the improvement of performance, both used in the project but with less precision than
+						I use nowadays for my games. Within the project, objects like the containers will not be render if a certain distance is
+						reached, this is made to avoid the sudden dissapearance or appearance of objects around the player which would break immersion
+						and overall disrupt the game flow.
 					</p>
 				</article>
 				<article>
 					<header>
 						<h2>Challenges</h2>
 					</header>
-					<a class="image fit"><img src="images/NonBinary/EndGame.png" alt="" /></a>
+					<a class="image fit"><img src="images/Downtown/Hotel.png" alt="" /></a>
 					<p style="text-align:justify">
-						Apart from the lighting challenges stated above, the URP engine seemed quite complex at first, however I have managed to
-						get better results and be more confortable with on future projects such as "Pestis."
+						Most challenges came from managing lighting, I understand that to fully get a grasp on how to properly set up a lightmap
+						and use lighting in a scene that doesn't only look well but doesn't destroy performance takes a lot of practice. Given
+						the time restrains and the alocated time to be able to work on the project, i was left with very limited room to properly
+						assess and stablish a more efficient and reliable scene.
 						<br><br>
-						Camera movement, was a bit of a problem at first, given that some of the walls were rather thick and i needed to adjust
-						its movement and zoom to allow the player to both see what they were doing and getting as much information as posible from
-						their surroundings to then make decisions. Camera movement also needed to be smoothed to avoid creating nausea, 
-						which took some iterations but was not a major issue.
+						Nonetheless, i feel quite proud towards what i managed to achieve and I'm looking forward to give it another go on future
+						projects.
+					</p>
+				</article>
+				<article>
+					<header>
+						<h2>Learning Outcomes</h2>
+					</header>
+					<a class="image fit" style="max-height:29.5%"><img src="images/Downtown/Car.png" alt="" /></a>
+					<p style="text-align:justify">
+						I think that this project further development my knowledge on lighting and it was definitely an upgrade from my
+						previous URP project, "Non Binary", in that area. Occlusion was something I also worked upon on previous projects, but in
+						this one there were extra factors that came to play that i haven't considered before, such as camera resolution.
+						<br><br>
+						Moreover, use of shaders has never been my forte, but being able to create a shader decal and it looking great boosted
+						my confidence towards working in other types of shaders, like the lava effect i used in Pestis.
 					</p>
 				</article>
 			</section>
 			<section class="post">
 				<header style="text-align:center;">
-					<h2>Learning Outcomes & Technical Playthrough</h2>
+					<h2>Technical Playthrough</h2>
 				</header>
-				<iframe class="image fit" width="100%" height="720px" src="https://youtube.com/embed/mKsTyVjK2Cw" title="YouTube video player"
+				<iframe class="image fit" width="100%" height="720px" src="https://youtube.com/embed/fiDw2c7Tkws" title="YouTube video player"
 						frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<p style="text-align:justify;">
-					I believe that one of the most valuable lessons I had during this project was the important of generating early builds to test
-					discrepancies between editor and the final product; As well as some insight into possible issues and pre-planning regarding lighting
-					and use of static objects.
-					<br><br>
-					Moreover, I gotten used to the player's input module provided by unity and its use of events to trigger certain methods without
-					the need to run checks through the update. It is by the use of delegates that i now run important checks on my game without 
-					polluting Update methods that runs every frame.
-				</p>
 			</section>
 		</div>
 
